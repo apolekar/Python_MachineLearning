@@ -1,25 +1,18 @@
-# Accept one number and check whether it is divisible by 3 and 5
-# Input: 15 
-# Output: Divisible by 3 and 5
+# Accept one number and print all odd numbers till that number.
+# Input: 10 
+# Output: 1 3 5 7 9
 
-def CheckDivision(Val):
-    if (Val % 3 == 0) and (Val % 5 == 0):
-        return True
-    else:
-        return False
+def OddNumber(Val1):
+    
+    for i in range(1, Val1 + 1):
+        if (i % 2 != 0):
+            print(i)    
 
 def main():
-    No1 = 0
-    Ans = False
-    
+    No1 = 0    
+
     No1 = int(input("Enter Number: "))
-    Ans = CheckDivision(No1)
-
-    if (Ans == True):
-        print("Number is divisible by 3 and 5")
-    else:
-        print("Number is not divisible by 3 and 5")
-
+    OddNumber(No1)
 
 if __name__ == "__main__":
     main()

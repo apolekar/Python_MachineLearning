@@ -1,12 +1,16 @@
-# Write a program which contains one function named as Display() that prints "Jay Ganesh" on console.
-# Output:- Jay Ganesh
+# Accept one number and print multiplication table of that number.
+# Input: 4 
+# Output: 4 8 12 16 20....
 
-def Display():
-    print("Jay Ganesh")
+def MultiplicationTable(Val1):
+    for i in range(1, 11):
+        print(Val1 * i)
 
 def main():
-    Display()
+    No1 = 0
+
+    No1 = int(input("Enter Number: "))
+    MultiplicationTable(No1)
 
 if __name__ == "__main__":
     main()
-

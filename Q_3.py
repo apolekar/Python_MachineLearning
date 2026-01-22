@@ -1,22 +1,23 @@
-# Accept one number and print square of that number.
+# Accept one number and print factorial of that number.
 # Input: 5 
-# Output: 25
+# Output: 120
 
-def Square(Val1):
-    res = 0
-    res = Val1 **2
+def Factorial(Val1):
+    Fact = 1
 
-    return res
+    for i in range(1, Val1 + 1):
+        Fact = Fact * i
+
+    return Fact
 
 def main():
     No1 = 0
-    Ans = 0
-    
+    Result = 0
+
     No1 = int(input("Enter Number: "))
-    Ans = Square(No1)
+    Result = Factorial(No1)
 
-    print("Square of number is: ", Ans)
-
+    print("Factorial is: ", Result)
 
 if __name__ == "__main__":
     main()

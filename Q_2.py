@@ -1,25 +1,22 @@
-# Write a Function ChkGreater() that accepts two numbers and prints the greater number.
-# Input: 10 20 
-# Output: 20 is greater
+# Accept one number and print sum of first N natural numbers.
+# Input: 5 
+# Output: 15
 
-def ChkGreater(Val1, Val2):
-    if Val1 > Val2:
-        return Val1
-    else:
-        return Val2
+def SumOfNumbers(Val1):
+    Sum = 0
+    for i in range(Val1 + 1):
+        Sum = Sum + i
+
+    return Sum
 
 def main():
     No1 = 0
-    No2 = 0
     Result = 0
 
-    No1 = int(input("Enter First Number: "))
-    No2 = int(input("Enter Second Number: "))
+    No1 = int(input("Enter Number: "))
+    Result = SumOfNumbers(No1)
 
-    Result = ChkGreater(No1, No2)
-
-    print(Result, "is greater")
+    print("Sum of Natural number is: ", Result)
 
 if __name__ == "__main__":
     main()
-
